@@ -40,10 +40,10 @@ public class Robot extends IterativeRobot {
 		shooter = Shooter.getInstance();
         chooser = new SendableChooser();
         chooser.addDefault("Default Auto", new ExampleCommand());
-//        chooser.addObject("My Auto", new MyAutoCommand());
+        //chooser.addObject("My Auto", new MyAutoCommand());
         SmartDashboard.putData("Auto mode", chooser);
         
-        
+        //must be at the end of RobotInit
         oi = OI.getInstance();
         System.out.println("Robot Finished Loading");
     }
