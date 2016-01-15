@@ -974,7 +974,7 @@ public class PIDSpeed implements TCPMessageInterface {
 //				 new DriveRightPIDSpeed(Double.valueOf(message[3]).doubleValue()).start();
 //			 else
 //				 new DrivePIDPause().start();
-//			
+			
 			
 		} catch (NumberFormatException e) {
 			// System.out.println("Don't send empty values");
