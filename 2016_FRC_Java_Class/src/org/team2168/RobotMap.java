@@ -45,8 +45,8 @@ public class RobotMap {
 	
 	
 	////Drivetrain Parameters////
-	public static final boolean reverseLeft = true;
-	public static final boolean reverseRight = false;
+	public static final boolean reverseLeft = false;
+	public static final boolean reverseRight = true;
 	
 	
 	
