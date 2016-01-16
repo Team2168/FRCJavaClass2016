@@ -15,4 +15,49 @@ public class RobotMap {
     // number and the module. For example you with a rangefinder:
     // public static int rangefinderPort = 1;
     // public static int rangefinderModule = 1;
+	
+	
+	//////Joysticks///////
+	public static final int driverJoystick = 0;
+	public static final int operatorJoystick = 1;
+	
+	
+	
+	/////////////PWM///////////
+	public static final int leftDriveTrain1 = 0;
+	public static final int leftDriveTrain2 = 1;
+	public static final int leftDriveTrain3 = 2;
+	public static final int rightDriveTrain1 = 3;
+	public static final int rightDriveTrain2 = 4;
+	public static final int rightDriveTrain3 = 5;
+	
+	public static final int shooterWheel = 6;
+	
+	
+	////Solinoids/////////
+	
+	
+	
+	
+	//////Relays//////
+	
+	
+	
+	
+	//////DIO/////////
+	
+	
+	
+	
+	/////Drivetrain Parameters////////
+	public static final boolean reverseLeft = false;
+	public static final boolean reverseRight = true;
+			
+	//static means you don't need to create an object class to use first
+	//static methods don't have anything to do with the object
+	
+	
+	
+	
+	
 }
