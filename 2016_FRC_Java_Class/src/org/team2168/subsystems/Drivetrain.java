@@ -52,7 +52,6 @@ public class Drivetrain extends Subsystem {
 		return instance;
 	}
 	
-	
 	/**
 	 * Takes in a double as a speed, and sets it too the left motors
 	 * @param speed is of type double from 1 to -1

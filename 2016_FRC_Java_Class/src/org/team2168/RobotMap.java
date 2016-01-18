@@ -29,7 +29,8 @@ public class RobotMap {
 	public static final int rightDriveTrain2 = 4;
 	public static final int rightDriveTrain3 = 5;
 	
-	public static final int shooterWheel = 6;
+	public static final int shooterWheel1 = 6;
+	public static final int shooterWheel2 = 7;
 	
 	///Solendods//////
 	
