@@ -29,9 +29,10 @@ public class RobotMap {
 	public static final int rightDriveTrain2 = 4;
 	public static final int rightDriveTrain3 = 5;
 	
-	public static final int shooterWheel = 6;
+	public static final int shooterWheel1 = 6;
+	public static final int shooterWheel2 = 7;
 	
-	///Solendods//////
+	///Solenoids//////
 	
 	
 	
@@ -45,9 +46,7 @@ public class RobotMap {
 	
 	
 	////Drivetrain Parameters////
-	public static final boolean reverseLeft = false;
-	public static final boolean reverseRight = true;
-	
-	
+	public static final boolean reverseLeftDrive = false;
+	public static final boolean reverseRightDrive = true;
 	
 }

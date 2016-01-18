@@ -4,7 +4,6 @@ import org.team2168.RobotMap;
 import org.team2168.commands.drivetrain.DriveWithJoysticks;
 
 import edu.wpi.first.wpilibj.Talon;
-import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
@@ -28,7 +27,7 @@ public class Drivetrain extends Subsystem {
 	static Drivetrain instance = null;
 	
 	/**
-	 * Default constructor for Drivtrain Singleton class
+	 * Default constructor for Drivetrain Singleton class
 	 */
 	private Drivetrain()
 	{
@@ -59,7 +58,7 @@ public class Drivetrain extends Subsystem {
 	 */
 	public void driveLeft(double speed)
 	{
-		if(RobotMap.reverseLeft)
+		if(RobotMap.reverseLeftDrive)
 			speed = -speed;
 		
 		leftMotor1.set(speed);
@@ -74,7 +73,7 @@ public class Drivetrain extends Subsystem {
 	 */
 	public void driveRight(double speed)
 	{
-		if(RobotMap.reverseRight)
+		if(RobotMap.reverseRightDrive)
 			speed = -speed;
 		
 		rightMotor1.set(speed);
