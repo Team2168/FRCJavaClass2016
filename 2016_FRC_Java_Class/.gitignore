@@ -28,6 +28,4 @@ tmp/
 /image.sym
 /build
 /resources
-build.xml
-build.properties
 sysProps.xml
