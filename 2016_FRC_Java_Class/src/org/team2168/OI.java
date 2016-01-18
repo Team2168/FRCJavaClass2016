@@ -1,7 +1,6 @@
 package org.team2168;
 
-import edu.wpi.first.wpilibj.buttons.Button;
-import org.team2168.commands.ExampleCommand;
+import org.team2168.utils.F310;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -34,5 +33,27 @@ public class OI {
     // Start the command when the button is released  and let it run the command
     // until it is finished as determined by it's isFinished method.
     // button.whenReleased(new ExampleCommand());
+	
+	public F310 driverJoystick;
+	public F310 operatorJoystick;
+	
+	static OI instance = null;
+	
+	/**
+	 * Private constructor for the singleton OI class
+	 */
+	private OI() {
+		driverJoystick = new F310(RobotMap.driverJoystick);
+		operatorJoystick = new F310(RobotMap.operatorJoystick);
+	}
+	
+	public static OI getInstance() {
+		if(instance == null)
+			instance = new OI();
+		
+		return instance;
+	}
+	
+	
+	
 }
-
