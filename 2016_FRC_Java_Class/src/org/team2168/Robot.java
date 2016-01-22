@@ -36,13 +36,16 @@ public class Robot extends IterativeRobot {
      * used for any initialization code.
      */
     public void robotInit() {
-		oi = OI.getInstance();
 		driveTrain = Drivetrain.getInstance();
 		shooter = Shooter.getInstance();
         chooser = new SendableChooser();
         chooser.addDefault("Default Auto", new ExampleCommand());
 //        chooser.addObject("My Auto", new MyAutoCommand());
         SmartDashboard.putData("Auto mode", chooser);
+        
+        
+        oi = OI.getInstance();
+        System.out.println("Robot Finished Loading");
     }
 	
 	/**
