@@ -22,18 +22,19 @@ public class RobotMap {
 	
 	
 	////////PWM/////////// 0 - 9
-	public static final int leftDriveTrain1 = 0;
-	public static final int leftDriveTrain2 = 1;
-	public static final int leftDriveTrain3 = 2;
-	public static final int rightDriveTrain1 = 3;
-	public static final int rightDriveTrain2 = 4;
-	public static final int rightDriveTrain3 = 5;
+	public static final int leftDriveTrain1 = 3;
+	public static final int leftDriveTrain2 = 4;
+	public static final int leftDriveTrain3 = 5;
+	public static final int rightDriveTrain1 = 0;
+	public static final int rightDriveTrain2 = 1;
+	public static final int rightDriveTrain3 = 2;
 	
 	public static final int shooterWheel1 = 6;
 	public static final int shooterWheel2 = 7;
 	
 	///Solendods//////
-	
+	public static final int intakeExtend = 0; 
+	public static final int intakeRetract = 1;
 	
 	
 	
