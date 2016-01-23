@@ -1,6 +1,7 @@
 
 package org.team2168;
 
+import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -9,6 +10,7 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import org.team2168.commands.ExampleCommand;
 import org.team2168.subsystems.Drivetrain;
 import org.team2168.subsystems.ExampleSubsystem;
+import org.team2168.subsystems.Intake;
 import org.team2168.subsystems.Shooter;
 
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
@@ -27,9 +29,11 @@ public class Robot extends IterativeRobot {
 	public static OI oi;
 	public static Drivetrain driveTrain;
 	public static Shooter shooter;
-
+	public static Intake  intake;
     Command autonomousCommand;
     SendableChooser chooser;
+    
+    Compressor comp;
 
     /**
      * This function is run when the robot is first started up and should be
@@ -38,13 +42,23 @@ public class Robot extends IterativeRobot {
     public void robotInit() {
 		driveTrain = Drivetrain.getInstance();
 		shooter = Shooter.getInstance();
+		intake = Intake.getInstance();
+		
+		
         chooser = new SendableChooser();
         chooser.addDefault("Default Auto", new ExampleCommand());
 //        chooser.addObject("My Auto", new MyAutoCommand());
         SmartDashboard.putData("Auto mode", chooser);
         
         
+        
+        //Must be at the end of RobotInit
         oi = OI.getInstance();
+        System.out.println("Robot Finished Loading");
+        
+        comp = new Compressor();
+        comp.start();
+        
         System.out.println("Robot Finished Loading");
     }
 	

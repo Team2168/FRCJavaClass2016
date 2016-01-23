@@ -34,6 +34,8 @@ public class RobotMap {
 	
 	///Solendods//////
 	
+	public static final int intakeExtend = 0;
+	public static final int intakeRetract = 1;
 	
 	
 	
