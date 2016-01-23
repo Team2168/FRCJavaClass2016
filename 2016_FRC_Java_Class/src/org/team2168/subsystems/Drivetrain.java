@@ -4,7 +4,6 @@ import org.team2168.RobotMap;
 import org.team2168.commands.drivetrain.DriveWithJoysticks;
 
 import edu.wpi.first.wpilibj.Talon;
-import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
