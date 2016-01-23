@@ -3,6 +3,9 @@ package org.team2168;
 import edu.wpi.first.wpilibj.buttons.Button;
 
 import org.team2168.commands.ExampleCommand;
+import org.team2168.commands.Intake.IntakeExtend;
+import org.team2168.commands.Intake.IntakeRetract;
+import org.team2168.commands.shooter.DriveShooterWithConstant;
 import org.team2168.commands.shooter.DriveShooterWithJoystick;
 import org.team2168.utils.F310;
 
@@ -51,9 +54,10 @@ public class OI {
 		driverJoystick = new F310(RobotMap.driverJoystick);
 		operatorJoystick = new F310(RobotMap.operatorJoystick);
 		
+		operatorJoystick.ButtonA().whileHeld(new DriveShooterWithConstant());
 		
-		
-		operatorJoystick.ButtonA().whileHeld(new DriveShooterWithJoystick());
+		operatorJoystick.ButtonY().whenPressed(new IntakeExtend());
+		operatorJoystick.ButtonB().whenPressed(new IntakeRetract());
 	}
 	
 	public static OI getInstance()
