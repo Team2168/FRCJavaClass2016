@@ -33,7 +33,8 @@ public class RobotMap {
 	public static final int shooterWheel2 = 7;
 	
 	///Solendods//////
-	
+	public static final int intakeExtend = 0;
+	public static final int intakeRetract = 1;
 	
 	
 	
